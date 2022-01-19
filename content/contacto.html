@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Contacto</title>
+		<meta charset="utf-8"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="../style/style.css">
+		<link rel="stylesheet" type="text/css" href="../styles/style.css">
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+		<meta name="description" content="Pagina de contacto, puedes dejar un mensaje o sugerencia">
+	</head>
+	<body class="colorFondo">
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+		<header>
+			<!-- Contenido solo versión desktop -->
+			<div class="bannerCinco desktopOnly">
+				<div class="tituloPag">
+					<div class="align-middle text-center fw-bolder">CONTACTO</div>
+				</div>
+			</div>
+			<!-- Contenido solo versión mobile -->
+			<div class="bannerCincoMob d-md-none">
+				<div class="tituloPag">
+					<div class="align-middle text-center fw-bolder">CONTACTO</div>
+				</div>
+			</div>
+		</header>
+		<nav>
+			<!-- Contenido solo versión mobile -->
+			<div class="d-sm-block d-md-none">
+				<div class="dropdowny position-absolute top-0 start-0 ps-1 ">
+					<button class="btn btn-outline-light dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">Menú</button>
+					<ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+						<li><a class="dropdown-item" href="../index.html" class="text-decoration-none">Inicio</a></li>
+						<li><a class="dropdown-item" href="eventos.html" class="text-decoration-none">Eventos</a></li>
+						<li><a class="dropdown-item" href="productos.html" class="text-decoration-none">Productos</a></li>
+						<li><a class="dropdown-item" href="zonagaming.html" class="text-decoration-none">ZonaGaming</a></li>
+						<li><a class="dropdown-item" href="contacto.html"class="text-decoration-none">Contacto</a></li>
+					</ul>
+				</div>
+			</div>
+			<!-- Contenido solo versión desktop -->
+			<div class="desktopOnly">
+				<div class="BarraNav sd-flex flex-row bd-highlight d-flex justify-content-evenly fs-5 fst-italic w-auto p-2" style="background-color: #C8E7FF">
+					<div><a href="../index.html" class="text-decoration-none">Inicio</a></div>
+					<div><a href="eventos.html" class="text-decoration-none">Eventos</a></div>
+					<div><a href="productos.html" class="text-decoration-none">Productos</a></div>
+					<div><a href="zonagaming.html" class="text-decoration-none">ZonaGaming</a></div>
+					<div><a href="contacto.html" class="text-decoration-none">Contacto</a></div>
+				</div>
+			</div>
+		</nav>
+		<br>
+		<!-- INFO DESARROLLO-->
+		<!-- Contenido solo versión desktop -->
+		<div class="desktopOnly">
+			<div class="colorLetraCont textoCuerpoDesk text-md-start ps-3 pe-3">
+			<p>Puedes enviar tus dudas, avisarnos tu interés para aparecer en nuestro apartado de <a href="productos.html" class="enlacesInternos text-decoration-none fw-light fst-italic">“productos”</a> o solo escribirnos, porque quieres dejarnos alguna sugerencia:</p>
+			</div>
+		</div>
+		<!-- Contenido solo versión mobile -->
+		<div class="d-md-none">
+			<div class="colorLetraCont letraContMob text-md-start ps-3 pe-3">
+			<p>Puedes enviar tus dudas, avisarnos tu interés para aparecer en nuestro apartado de <a href="productos.html" class="enlacesInternos text-decoration-none fw-light fst-italic">“productos”</a> o solo escribirnos, porque quieres dejarnos alguna sugerencia:</p>
+			</div>
+		</div>
+		<div class="colorLetraCont textoCuerpoDesk text-center ps-3 pe-3">
+			<form class="pb-5" action="submit" method="POST">
+				<br>
+				<div class="formulario">
+					<div><label for="Nombre">Nombre:</label></div>
+					<div><input type="text" name="Nombre"></div>
+					<div><label for="Apellido">Apellido:</label></div>
+					<div><input type="text" name="Apellido"></div>
+					<div><label for="Edad">Tu edad:</label></div>
+					<div><input type="number" name="Edad"></div>
+					<div><label for="email">Correo electrónico:</label></div>
+					<div><input type="email" name="email"></div>
+					<label class="pt-3 fw-bold" for="comentarios">Cuéntanos el motivo de tu mensaje:</label>
+					<br>
+					<span class="fw-light fst-italic"><label for="radio">Sugerencia:</label></span>
+					<span><input type="radio" name="tipo_mensaje" value="Sugerencia"></span>
+					<br>
+					<span class="fw-light fst-italic"><label for="radio">Sección Productos:</label></span>
+					<span><input type="radio" name="tipo_mensaje" value="Sección Productos"></span>
+					<br>
+					<span class="fw-light fst-italic"><label for="radio">Consulta General:</label></span>
+					<span><input type="radio" name="tipo_mensaje" value="Consulta General"></span>
+					<br>
+					<label class="pt-3 fw-bold" for="comentarios">Deja aquí tu mensaje:</label>
+					<br>
+					<textarea class="form-control-lg mb-3" rows="5" cols="28" name="comentarios"></textarea>
+					<div><input type="Button" name="Enviar" value="Enviar mensaje"></div>
+				</div>
+			</form>
+		</div>
+		<!-- Aquí inicia footer -->
+		<div id="footer" class="edicionFooter  pb-5 pt-5">
+			<div class="ps-4 letraFooter">Nuestras redes sociales:</div>
+			<ul class="fw-bold">
+				<li><a href="#"><img src="../media/fblogo.png"> Facebook</a></li>
+				<li><a href="#"><img src="../media/ilogo.png"> Instagram</a></li>
+				<li><a href="#"><img src="../media/tlogo.png"> Twitter</a></li>
+				<li><a href="#"><img src="../media/youtube-logo-hd-8.png"> Youtube</a></li>
+				<li><a href="#"><img src="../media/twitchlogo.png"> Twitch</a></li>
+			</ul>
+			<div class="TransFooter">
+				<form class="ps-4" action="submit" method="POST">
+					<div class="letraFooter fw-bold">SUSCRÍBETE A NUESTRO NEWSLETTER:</div>
+					<input type="text" name="Email">
+					<input type="button" name="Enviar" value="Enviar">
+				</form>
+			</div>
+		</div>
+	</body>
+</html>
