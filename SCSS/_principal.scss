@@ -5,7 +5,8 @@
 body{
 	overflow-x: hidden;
 }
-@media all and (max-width: 767px){
+
+@media all and (max-width:767x800px){
 	.desktopOnly{
 	display: none;
 	}
@@ -34,6 +35,15 @@ body{
 	.textoCuerpoMob{
 		font-size: 0.7rem;
 		}
+	.prueba{
+		color: map-get($ColoresFonts, EnlaceSup);
+		text-decoration: none;
+		font-weight: bold;
+		font-size: 2rem;
+		&:hover{
+			color: map-get($ColoresFonts, EnlaceSup-hover);
+		}
+	}
 }
 .bannerUnoDesk{
 	@include bannerIndex;
@@ -184,7 +194,7 @@ body{
 		color: map-get($ColoresFonts, EnlaceSup);
 		text-decoration: none;
 		font-weight: bold;
-		font-size: 2.3rem;
+		font-size: 1rem;
 		&:hover{
 			color: map-get($ColoresFonts, EnlaceSup-hover);
 		}
@@ -250,6 +260,15 @@ body{
 		margin: auto;
 		height: auto;
 		width: 80%;
+	}
+	.prueba{
+		color: map-get($ColoresFonts, EnlaceSup);
+		text-decoration: none;
+		font-weight: bold;
+		font-size: 8rem;
+		&:hover{
+			color: map-get($ColoresFonts, EnlaceSup-hover);
+		}
 	}
 }
 /*Estilo de footer*/

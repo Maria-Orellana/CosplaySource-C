@@ -1,0 +1,50 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	overflow-x: hidden;
+}
+@media all and (min-width:768px){
+	.bannerUno{
+		@include bannerIndexMob;
+		.tituloPag{
+			line-height: 30rem;
+			font-size: 7vw;
+		}
+	}
+	.BarraNav{
+		& div{
+			& a{
+				color: map-get($ColoresFonts, EnlaceNav);
+				transition-property: font-size;
+				transition-timing-function: ease-in-out;
+				transition-duration: 500ms;
+				&:hover{
+					font-size: 1.5rem;
+					color: map-get($ColoresFonts, EnlaceNav-hover);
+				}
+			}
+		}
+	}
+}
+.desktopOnly{
+	display: none;
+}
+.bannerUno{
+		@include bannerIndexMob;
+		.tituloPag{
+			line-height: 6em;
+			font-size: 7vw;
+			color: #FFF;
+		}
+	}
+#dropdownMenuButton1{
+		background-color: #C8E7FF;
+		color: #000;
+		.dropdown-menu {
+			&.dropdown-item{
+			color: #6d6875;
+			}
+		}
+	}
