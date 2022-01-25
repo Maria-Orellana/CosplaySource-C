@@ -1,3 +1,6 @@
+19/01/22 11:30 h Reintentando corregir el código de todo el sitio. Correción en gran medida de la media querie.
+
+-
 Uso de Maps:
 Si bien fue lo último que agregué, lo usé bastante, porque decidí trabajar los colores de letras, enlaces y hover de enlaces. 
 Claramente en caso que quiera cambiar los colores, con eso va ser más suficiendo y más facil de corregir toda la página en menos tiempo.
